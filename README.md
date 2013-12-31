@@ -1,4 +1,13 @@
 ideamart-subscription-sample
 ============================
 
-Sample application for subscription api
+In command line
+      -goto to the project path
+      -type command
+            mvn clean install jetty:run
+            
+Start the simulator and goto the USSD tab
+          -In URL type
+                http://localhost:8999/ideamart-subscription-sample/subscriptionDetailView.jsp
+        
+Start the simulator and test your application.
