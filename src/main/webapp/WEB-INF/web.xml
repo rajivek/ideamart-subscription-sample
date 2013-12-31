@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+	version="2.4">
+
+	<servlet>
+		<servlet-name>SubServlet</servlet-name>
+		<servlet-class>com.ideamart.subscription.sample.SubscriptionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SubServlet</servlet-name>
+		<url-pattern>/subscriptionApp</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SubRegisterServlet</servlet-name>
+		<servlet-class>com.ideamart.subscription.sample.SubscriptionRegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SubRegisterServlet</servlet-name>
+		<url-pattern>/subRegister</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>subNotificationView</servlet-name>
+		<servlet-class>com.ideamart.subscription.sample.SubscriptionNotificationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>subNotificationView</servlet-name>
+		<url-pattern>/subNotification</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>subBaseSize</servlet-name>
+		<servlet-class>com.ideamart.subscription.sample.SubscriptionBaseSizeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>subBaseSize</servlet-name>
+		<url-pattern>/checkBaseSize</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>subStatus</servlet-name>
+		<servlet-class>com.ideamart.subscription.sample.SubscriptionStatusServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>subStatus</servlet-name>
+		<url-pattern>/checkStatus</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>subNotificationReceiver</servlet-name>
+		<servlet-class>hms.kite.samples.api.subscription.SubscriptionNotificationReceiver</servlet-class>
+		<init-param>
+			<param-name>subReceiver</param-name>
+			<param-value>com.ideamart.subscription.sample.SubscriptionNotificationClient</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>subNotificationReceiver</servlet-name>
+		<url-pattern>/sub-notification-receiver</url-pattern>
+	</servlet-mapping>
+
+</web-app>
+
+
+
+  
