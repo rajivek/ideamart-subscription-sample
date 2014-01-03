@@ -11,3 +11,6 @@ Start the simulator and goto the Subscription tab
                 http://localhost:8999/ideamart-subscription-sample/sub-notification-receiver
         
 Start the simulator and test your application.
+
+Check the changes in ui 
+		http://localhost:8999/ideamart-subscription-sample/subscriptionDetailView.jsp
