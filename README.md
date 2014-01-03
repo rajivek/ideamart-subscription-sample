@@ -6,8 +6,8 @@ In command line
       -type command
             mvn clean install jetty:run
             
-Start the simulator and goto the USSD tab
+Start the simulator and goto the Subscription tab
           -In URL type
-                http://localhost:8999/ideamart-subscription-sample/subscriptionDetailView.jsp
+                http://localhost:8999/ideamart-subscription-sample/sub-notification-receiver
         
 Start the simulator and test your application.
